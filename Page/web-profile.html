@@ -39,7 +39,7 @@
   </script>
 </head>
 <body class="bg-white dark:bg-gray-900 transition-colors duration-200">
-  <header class="bg-gradient-to-b from-blue-900 to-blue-500 dark:from-gray-800 dark:to-gray-900 text-white shadow-lg">
+  <header class="fixed top-0 left-0 right-0 bg-gradient-to-b from-blue-900 to-blue-500 dark:from-gray-800 dark:to-gray-900 text-white shadow-lg z-10">
     <div class="container mx-auto px-6 py-4">
       <div class="flex justify-between items-center">
         <h1 class="text-3xl font-bold">Dashboard</h1>
@@ -48,40 +48,43 @@
     </div>
   </header>
 
-  <div class="flex min-h-screen">
-    <aside class="w-64 bg-gradient-to-b from-blue-500 to-blue-900 dark:from-gray-900 dark:to-gray-800 text-white">
-      <nav class="p-6">
-        <h2 class="text-xl font-semibold mb-8">Navigation</h2>
-        <ul class="space-y-6">
-          <li>
-            <a href="#dashboard" class="flex items-center space-x-2 p-3 rounded-lg bg-blue-700 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
-              <span class="material-icons">dashboard</span>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="#users" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
-              <span class="material-icons">people</span>
-              <span>Users</span>
-            </a>
-          </li>
-          <li>
-            <a href="#settings" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
-              <span class="material-icons">settings</span>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a href="#reports" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
-              <span class="material-icons">bar_chart</span>
-              <span>Reports</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <div class="flex min-h-screen pt-20">
+    <aside class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-500 to-blue-900 dark:from-gray-900 dark:to-gray-800 text-white pt-20 z-10">
+      <aside class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-500 to-blue-900 dark:from-gray-900 dark:to-gray-800 text-white pt-20 z-10">
+        <nav class="absolute top-0 left-0 w-full p-6">
+          <h2 class="text-xl font-semibold mb-5">Navigation</h2>
+          <ul class="space-y-6">
+            <li>
+              <a href="#dashboard" class="flex items-center space-x-2 p-3 rounded-lg bg-blue-700 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
+                <span class="material-icons">dashboard</span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#users" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
+                <span class="material-icons">people</span>
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="#settings" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
+                <span class="material-icons">settings</span>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#reports" class="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200">
+                <span class="material-icons">bar_chart</span>
+                <span>Reports</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      
     </aside>
 
-    <main class="flex-1 p-8">      
+    <main class="flex-1 p-8 ml-64">
         <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg mb-6 p-6">
           <h2 class="text-4xl font-bold text-blue-700 dark:text-gray-200 mb-4">KELOMPOK 2</h2>
           
